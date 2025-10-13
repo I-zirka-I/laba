@@ -3,7 +3,7 @@
 int main(int argc, char** argv){
 
     double arr[10];
-    int a=0;
+    double a=0.0;
     for (int i = 0; i < 10; i++){
         if (scanf("%lf", &arr[i]) != 1)
             return 1;
