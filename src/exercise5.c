@@ -3,9 +3,9 @@
 
 int main(int argc,char** argv)
 {
-    int array1[10][3];
-    int array2[3][10];
-    int array_result[10][10];
+    float array1[10][3];
+    float array2[3][10];
+    float array_result[10][10];
 
     for(int i = 0; i < 10;i++)
     {
@@ -39,7 +39,7 @@ int main(int argc,char** argv)
     {
         for(int j = 0 ; j < 10; j++)
         {
-            printf("%d ",array_result[i][j]);
+            printf("%.3f ",array_result[i][j]);
         }
     }
 }
