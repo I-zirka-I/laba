@@ -20,8 +20,8 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
         dest[size_src1+i]=src2[i];
     }
     for(int i=0;i<(size_src1+size_src2)-1;i++){
-        for(int j=0;j<(size_src1+size_src2)-1;j++){
-            if(dest[j]<dest[j+1]){
+        for(int j=0;j<(size_src1+size_src2)-1-i;j++){
+            if(dest[j]>dest[j+1]){
                 int a = dest[j];
                 dest[j]=dest[j+1];
                 dest[j+1]=a;
